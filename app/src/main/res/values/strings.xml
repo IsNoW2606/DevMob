@@ -1,0 +1,17 @@
+<resources>
+    <string name="play">Play</string>
+
+    <string name="app_name">SimonGame</string>
+
+    <string name="best_score">Best score</string>
+    <string name="level">Level</string>
+    <string name="example">Example</string>
+    <string name="number_example">12</string>
+    <string name="last_score">Last score</string>
+    <string name="start_game">Press to start</string>
+    <string name="try_again">Try again!</string>
+    <string name="player_placeholder">Player name</string>
+    <string name="save_score">Save score!</string>
+    <string name="player_picture">Player picture</string>
+    <string name="home">Home</string>
+</resources>

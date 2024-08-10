@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Font dimen -->
+    <dimen name="font_size_medium">26dp</dimen>
+
+    <!-- Stroke dimen -->
+    <dimen name="stroke_width_medium">6dp</dimen>
+    <dimen name="button_corner_radius">25dp</dimen>
+    <dimen name="corner_radius_medium">25dp</dimen>
+    <dimen name="font_size_regular">20dp</dimen>
+    <dimen name="padding_regular">10dp</dimen>
+    <dimen name="stroke_width_small">3dp</dimen>
+    <dimen name="corner_radius_small">10dp</dimen>
+    <dimen name="padding_body">10dp</dimen>
+    <dimen name="font_size_large">40dp</dimen>
+    <dimen name="font_size_extra_large">100dp</dimen>
+    <dimen name="stroke_width_extra_large">20dp</dimen>
+    <dimen name="circular_button_corner_radius">50dp</dimen>
+    <dimen name="icon_large">70dp</dimen>
+    <dimen name="icon_large_padding">15dp</dimen>
+    <dimen name="font_size_small">12dp</dimen>
+    <dimen name="icon_regular_padding">8dp</dimen>
+    <dimen name="icon_size">46dp</dimen>
+</resources>

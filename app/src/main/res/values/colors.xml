@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Simon Game Color -->
+    <color name="green_on">#00FF00</color>
+    <color name="green_off">#009600</color>
+
+    <color name="red_on">#FF0000</color>
+    <color name="red_off">#960000</color>
+
+    <color name="blue_on">#0000FF</color>
+    <color name="blue_off">#000096</color>
+
+    <color name="yellow_on">#FFFF00</color>
+    <color name="yellow_off">#969600</color>
+
+    <color name="label_color">#695c76</color>
+    <color name="text_light">#FFFFFF</color>
+    <color name="stroke_light">#FFFFFF</color>
+    <color name="button_action">#ffdc16</color>
+    <color name="tab_header">#1af460</color>
+    <color name="tab">#FFFFFF</color>
+    <color name="tab_row">#1673ff</color>
+    <color name="is_showing_sequence">#ffdc16</color>
+    <color name="text_light_border">#d46eec</color>
+    <color name="score_text_border">#673AB7</color>
+    <color name="text_field_stroke">#3F51B5</color>
+    <color name="save_button">#0DCA14</color>
+    <color name="share_button">#1C5EAD</color>
+    <color name="home_button">#FFC107</color>
+    <color name="input_light">#FFFFFF</color>
+    <color name="bottom_bar">#1673ff</color>
+    <color name="bottom_bar_selected_item">#525252</color>
+
+</resources>
