@@ -102,7 +102,7 @@ fun BestScoreTab(modifier: Modifier = Modifier, bestScores: List<GameDataUiState
         LazyColumn(
             verticalArrangement = Arrangement.spacedBy(padding.div(2))
         ) {
-            val count = bestScores.size.coerceAtMost(3)
+            val count = bestScores.size
             items(count) {
                 val item = bestScores[it]
 
