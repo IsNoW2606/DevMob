@@ -13,8 +13,10 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.flow.update
 import kotlinx.coroutines.launch
 
-class GameViewModel(private val soundBoard: SimonSoundBoard) : ViewModel() {
-    private var game: Game = Game()
+class GameViewModel(
+    private var game: Game = Game(),
+    private val soundBoard: SimonSoundBoard
+) : ViewModel() {
 
     private fun showCurrentLevelSequence() {
         viewModelScope.launch {

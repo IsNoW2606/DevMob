@@ -1,5 +1,7 @@
 [versions]
 agp = "8.3.2"
+espressoCoreVersion = "3.1.1"
+espressoIntents = "3.6.1"
 kotlin = "1.9.0"
 coreKtx = "1.13.0"
 junit = "4.13.2"
@@ -14,9 +16,17 @@ lifecycleViewmodelComposeAndroid = "2.8.3"
 navigationCompose = "2.7.7"
 constraintlayoutCompose = "1.0.1"
 room = "2.6.1"
+runner = "1.6.1"
+uiTestJunit4Android = "1.6.8"
+robolectric = "4.12.1"
 
 [libraries]
+androidx-core = { module = "androidx.test:core", version.ref = "runner" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-espresso-core-v311 = { module = "androidx.test.espresso:espresso-core", version.ref = "espressoCoreVersion" }
+androidx-espresso-intents = { module = "androidx.test.espresso:espresso-intents", version.ref = "espressoIntents" }
+androidx-rules = { module = "androidx.test:rules", version.ref = "runner" }
+androidx-runner = { module = "androidx.test:runner", version.ref = "runner" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -38,6 +48,9 @@ androidx-constraintlayout-compose = { group = "androidx.constraintlayout", name 
 room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "room" }
 room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "room" }
 room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "room" }
+androidx-ui-test-junit4-android = { group = "androidx.compose.ui", name = "ui-test-junit4-android", version.ref = "uiTestJunit4Android" }
+androidx-compose-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest", version.ref = "uiTestJunit4Android" }
+robolectric = { module = "org.robolectric:robolectric", version.ref = "robolectric" }
 
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }

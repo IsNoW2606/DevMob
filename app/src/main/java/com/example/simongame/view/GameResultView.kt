@@ -48,11 +48,13 @@ import androidx.compose.ui.graphics.ShaderBrush
 import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.res.vectorResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
@@ -428,7 +430,7 @@ fun PlayerPicture(picture: Bitmap?, onTakePictureClick: () -> Unit, onDeletePict
                 modifier = Modifier
                     .padding(padding)
                     .border(strokeWidth, strokeColor),
-                imageVector = Icons.Default.Person,
+                imageVector = ImageVector.vectorResource(id = R.drawable.baseline_camera_alt_24),
                 contentDescription = stringResource(id = R.string.player_picture)
             )
         }

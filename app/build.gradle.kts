@@ -51,6 +51,24 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
+    testOptions {
+        unitTests {
+            isReturnDefaultValues = true
+            isIncludeAndroidResources = true
+        }
+    }
+
+    // Tests can be Robolectric or instrumented tests
+    sourceSets {
+        val sharedTestDir = "src/sharedTest/java"
+        getByName("test") {
+            java.srcDir(sharedTestDir)
+        }
+        getByName("androidTest") {
+            java.srcDir(sharedTestDir)
+        }
+    }
 }
 
 dependencies {
@@ -69,14 +87,30 @@ dependencies {
     implementation(libs.androidx.navigation.compose)
 
     implementation(libs.room.runtime)
+    implementation(libs.androidx.ui.test.junit4.android)
     ksp(libs.room.compiler)
     implementation(libs.room.ktx)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
+    debugImplementation(libs.androidx.compose.ui.test.manifest)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    testImplementation(libs.androidx.ui.test.junit4)
+    testImplementation(libs.robolectric)
+
+    androidTestImplementation(libs.androidx.core)
+    androidTestImplementation(libs.androidx.runner)
+    androidTestImplementation(libs.androidx.rules)
+
+    testImplementation(libs.androidx.espresso.core)
+    testImplementation(libs.androidx.espresso.intents)
+
+}
+
+tasks.withType<Test>().configureEach {
+    systemProperties["robolectric.logging"] = "stdout"
 }

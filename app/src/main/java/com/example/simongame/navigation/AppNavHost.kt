@@ -113,7 +113,7 @@ fun AppNavHost(
                 ) {
                     GameView(
                         onBackPressed = {
-                            navController.popBackStack()
+                            navController.navigate(Destination.Home.route)
                             showBottomBar = true
                         },
                         onGameFinished = { score ->

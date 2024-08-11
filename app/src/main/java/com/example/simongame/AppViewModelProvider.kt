@@ -5,6 +5,7 @@ import androidx.lifecycle.createSavedStateHandle
 import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
+import com.example.simongame.model.Game
 import com.example.simongame.util.SimonSoundBoard
 import com.example.simongame.view.GameView
 import com.example.simongame.viewmodel.BestScoreViewModel
@@ -16,7 +17,10 @@ object AppViewModelProvider {
     val Factory = viewModelFactory {
         initializer {
             GameViewModel(
-                SimonSoundBoard(myApplication().applicationContext)
+                Game(),
+                SimonSoundBoard(
+                    myApplication().applicationContext
+                )
             )
         }
         initializer {

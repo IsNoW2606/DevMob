@@ -17,25 +17,11 @@ import com.example.simongame.ui.theme.SimonGameTheme
 import com.example.simongame.util.SimonSoundBoard
 import com.example.simongame.view.GameView
 
-val LocalActivity = staticCompositionLocalOf<ComponentActivity> {
-    error("LocalActivity is not present")
-}
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            CompositionLocalProvider(LocalActivity provides this@MainActivity) {
-                SimonGameTheme {
-                    // A surface container using the 'background' color from the theme
-                    Surface(
-                        modifier = Modifier.fillMaxSize(),
-                        color = MaterialTheme.colorScheme.background
-                    ) {
-                        AppNavHost()
-                    }
-                }
-            }
+            App()
         }
     }
 }
